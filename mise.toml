@@ -1,2 +1,11 @@
 [tools]
 nodejs = "24.4.1"
+
+[tasks.publisher]
+description = "fhir-ig-publisher"
+run = """
+docker compose -f .devcontainer/compose.yml exec -it fhir-ig-publisher \
+  java -jar /app/org.hl7.fhir.publisher.cli.jar \
+  -ig /workspaces/bha-test-ig \
+  -tx n/a
+"""
