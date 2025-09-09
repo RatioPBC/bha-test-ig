@@ -8,6 +8,11 @@ on:
 jobs:
   fhir-ig-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      pages: write
+      id-token: write
 
     steps:
       - uses: actions/checkout@v4
@@ -25,12 +30,15 @@ jobs:
 
       - name: build
         run: |
-          docker run --rm ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17 \
+          docker run \
+            --rm \
+            -v `pwd`:/workspaces/bha-test-ig \
+            ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17 \
             -ig /workspaces/bha-test-ig \
             -tx n/a
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./output
+          path: ./output/
 
       - uses: actions/deploy-pages@v4
