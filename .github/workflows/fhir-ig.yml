@@ -19,8 +19,16 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: pull image
-        run: |
-          docker pull ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17
+        run: docker pull ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17
+
+      - name: make cache dir
+        run: mdkir -p /tmp/dot_fhir
+
+      - uses: actions/cache@v4
+        id: cache-elixir-build-deps
+        with:
+          path: /tmp/dot_fhir
+          key: ${{ runner.os }}-dot-fhir-${{ hashFiles(format('{0}/{1}', github.workspace, 'ig.ini')) }}
 
       - name: build
         id: build
@@ -28,6 +36,7 @@ jobs:
           docker run \
             --rm \
             -v `pwd`:/workspaces/bha-test-ig \
+            -v /tmp/dot_fhir:/home/igpublisher/.fhir \
             ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17 \
             -ig /workspaces/bha-test-ig \
             -tx n/a
@@ -38,6 +47,7 @@ jobs:
           path: ./output/
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

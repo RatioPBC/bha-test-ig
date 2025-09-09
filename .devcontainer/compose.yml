@@ -8,3 +8,7 @@ services:
     init: true
     volumes:
       - ..:/workspaces/bha-test-ig
+      - dot_fhir:/home/igpublisher/.fhir
+
+volumes:
+  dot_fhir:
