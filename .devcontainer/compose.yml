@@ -1,0 +1,10 @@
+services:
+  fhir-ig-publisher:
+    command: infinity
+    entrypoint: /bin/sleep
+    healthcheck:
+      test: ["CMD", "/bin/true"]
+    image: ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17
+    init: true
+    volumes:
+      - ..:/workspaces/bha-test-ig
