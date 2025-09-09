@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="bha-ethnicity-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem bha-ethnicity-cs</b></p><a name="bha-ethnicity-cs"> </a><a name="hcbha-ethnicity-cs"> </a><p>This  code system <code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="bha-ethnicity-cs-0"> </a></td><td>Not Hispanic/Latino</td></tr><tr><td style="white-space:nowrap">1<a name="bha-ethnicity-cs-1"> </a></td><td>Hispanic/Latino (Mexican)</td></tr><tr><td style="white-space:nowrap">2<a name="bha-ethnicity-cs-2"> </a></td><td>Hispanic/Latino (Puerto Rican)</td></tr><tr><td style="white-space:nowrap">3<a name="bha-ethnicity-cs-3"> </a></td><td>Hispanic/Latino (Cuban)</td></tr><tr><td style="white-space:nowrap">4<a name="bha-ethnicity-cs-4"> </a></td><td>Hispanic/Latino (Other)</td></tr><tr><td style="white-space:nowrap">5<a name="bha-ethnicity-cs-5"> </a></td><td>Declined to answer</td></tr></table></div>
+  </text>
+  <url value="http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs"/>
+  <version value="0.1.0"/>
+  <name value="BHAEthnicityCS"/>
+  <title value="BHA Ethnicity Codes"/>
+  <status value="draft"/>
+  <date value="2025-09-09T19:48:48+00:00"/>
+  <publisher value="Colorado Behavioral Health Administration"/>
+  <contact>
+    <name value="Colorado Behavioral Health Administration"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bha.colorado.gov"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cdhs_bha_provider_support@state.co.us"/>
+    </telecom>
+  </contact>
+  <description value="Ethnicity codes used by BHA"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="0"/>
+    <display value="Not Hispanic/Latino"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="Hispanic/Latino (Mexican)"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Hispanic/Latino (Puerto Rican)"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Hispanic/Latino (Cuban)"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Hispanic/Latino (Other)"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Declined to answer"/>
+  </concept>
+</CodeSystem>

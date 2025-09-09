@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "bha-action-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+    "version" : "0.1.0",
+    "name" : "BHAActionTypeCS"
+  },
+  {
+    "id" : "bha-ethnicity-cs",
+    "type" : "CodeSystem",
+    "url" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+    "version" : "0.1.0",
+    "name" : "BHAEthnicityCS"
+  },
+  {
+    "id" : "bha-test-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://bha.colorado.gov/fhir/test/ImplementationGuide/bha-test-ig",
+    "version" : "0.1.0",
+    "name" : "BHATestIG"
+  },
+  {
+    "id" : "bha-action-type",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-action-type",
+    "version" : "0.1.0",
+    "name" : "BHAActionType"
+  },
+  {
+    "id" : "bha-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-encounter",
+    "version" : "0.1.0",
+    "name" : "BHAEncounter"
+  },
+  {
+    "id" : "bha-ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-ethnicity",
+    "version" : "0.1.0",
+    "name" : "BHAEthnicity"
+  },
+  {
+    "id" : "bha-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-organization",
+    "version" : "0.1.0",
+    "name" : "BHAOrganization"
+  },
+  {
+    "id" : "bha-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-patient",
+    "version" : "0.1.0",
+    "name" : "BHAPatient"
+  },
+  {
+    "id" : "bha-referral-source",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-referral-source",
+    "version" : "0.1.0",
+    "name" : "BHAReferralSource"
+  },
+  {
+    "id" : "bha-update-type",
+    "type" : "StructureDefinition",
+    "url" : "http://bha.colorado.gov/fhir/test/StructureDefinition/bha-update-type",
+    "version" : "0.1.0",
+    "name" : "BHAUpdateType"
+  },
+  {
+    "id" : "bha-action-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs",
+    "version" : "0.1.0",
+    "name" : "BHAActionTypeVS"
+  },
+  {
+    "id" : "bha-ethnicity-vs",
+    "type" : "ValueSet",
+    "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs",
+    "version" : "0.1.0",
+    "name" : "BHAEthnicityVS"
+  }
+]

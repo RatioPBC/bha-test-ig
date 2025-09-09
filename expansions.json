@@ -1,0 +1,134 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "ef29293c-030c-445a-9e74-493ebe166380",
+  "meta" : {
+    "lastUpdated" : "2025-09-09T19:49:06.218+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-bha-action-type-cs.html\">codesystem BHA Action Type Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs-01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-action-type-cs.html#bha-action-type-cs-01\">01</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</td><td>Admission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs-03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-action-type-cs.html#bha-action-type-cs-03\">03</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</td><td>Update</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs-05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-action-type-cs.html#bha-action-type-cs-05\">05</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</td><td>Discharge</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs-06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-action-type-cs.html#bha-action-type-cs-06\">06</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</td><td>Evaluation Only</td></tr></table></div>"
+      },
+      "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs",
+      "version" : "0.1.0",
+      "name" : "BHAActionTypeVS",
+      "title" : "BHA Action Type Value Set",
+      "status" : "draft",
+      "date" : "2025-09-09T19:48:48+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:cbdcbedd-9a6d-4d2f-9950-4945646a6b6b",
+        "timestamp" : "2025-09-09T19:49:27+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+          "code" : "01",
+          "display" : "Admission"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+          "code" : "03",
+          "display" : "Update"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+          "code" : "05",
+          "display" : "Discharge"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+          "code" : "06",
+          "display" : "Evaluation Only"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-bha-ethnicity-cs.html\">codesystem BHA Ethnicity Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-0\">0</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Not Hispanic/Latino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-1\">1</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Hispanic/Latino (Mexican)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-2\">2</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Hispanic/Latino (Puerto Rican)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-3\">3</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Hispanic/Latino (Cuban)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-4\">4</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Hispanic/Latino (Other)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-bha-ethnicity-cs.html#bha-ethnicity-cs-5\">5</a></td><td>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</td><td>Declined to answer</td></tr></table></div>"
+      },
+      "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs",
+      "version" : "0.1.0",
+      "name" : "BHAEthnicityVS",
+      "title" : "BHA Ethnicity Value Set",
+      "status" : "draft",
+      "date" : "2025-09-09T19:48:48+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c416847a-faa5-4c9e-b596-a7c8215d155a",
+        "timestamp" : "2025-09-09T19:49:27+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "0",
+          "display" : "Not Hispanic/Latino"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "1",
+          "display" : "Hispanic/Latino (Mexican)"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "2",
+          "display" : "Hispanic/Latino (Puerto Rican)"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "3",
+          "display" : "Hispanic/Latino (Cuban)"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "4",
+          "display" : "Hispanic/Latino (Other)"
+        },
+        {
+          "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+          "code" : "5",
+          "display" : "Declined to answer"
+        }]
+      }
+    }
+  }]
+}

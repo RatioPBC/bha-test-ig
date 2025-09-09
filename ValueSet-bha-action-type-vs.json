@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "bha-action-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet bha-action-type-vs</b></p><a name=\"bha-action-type-vs\"> </a><a name=\"hcbha-action-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-bha-action-type-cs.html\"><code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs",
+  "version" : "0.1.0",
+  "name" : "BHAActionTypeVS",
+  "title" : "BHA Action Type Value Set",
+  "status" : "draft",
+  "date" : "2025-09-09T19:48:48+00:00",
+  "publisher" : "Colorado Behavioral Health Administration",
+  "contact" : [{
+    "name" : "Colorado Behavioral Health Administration",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://bha.colorado.gov"
+    },
+    {
+      "system" : "email",
+      "value" : "cdhs_bha_provider_support@state.co.us"
+    }]
+  }],
+  "description" : "Allowed action type values for BHA CCAR reporting",
+  "compose" : {
+    "include" : [{
+      "system" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs"
+    }]
+  }
+}

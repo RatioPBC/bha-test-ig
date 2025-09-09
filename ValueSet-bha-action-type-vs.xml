@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bha-action-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet bha-action-type-vs</b></p><a name="bha-action-type-vs"> </a><a name="hcbha-action-type-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-bha-action-type-cs.html"><code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="BHAActionTypeVS"/>
+  <title value="BHA Action Type Value Set"/>
+  <status value="draft"/>
+  <date value="2025-09-09T19:48:48+00:00"/>
+  <publisher value="Colorado Behavioral Health Administration"/>
+  <contact>
+    <name value="Colorado Behavioral Health Administration"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bha.colorado.gov"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cdhs_bha_provider_support@state.co.us"/>
+    </telecom>
+  </contact>
+  <description value="Allowed action type values for BHA CCAR reporting"/>
+  <compose>
+    <include>
+      <system value="http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs"/>
+    </include>
+  </compose>
+</ValueSet>

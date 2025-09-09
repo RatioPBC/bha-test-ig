@@ -1,0 +1,32 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BHAActionTypeVS",
+      "title" : "BHA Action Type Value Set",
+      "description" : "Allowed action type values for BHA CCAR reporting",
+      "systems" : [
+        "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-bha-action-type.html" : "BHA Action Type"
+    },
+    {
+      "url" : "http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BHAEthnicityVS",
+      "title" : "BHA Ethnicity Value Set",
+      "description" : "Allowed ethnicity values for BHA reporting",
+      "systems" : [
+        "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-bha-ethnicity.html" : "BHA Ethnicity Extension"
+    }
+  ]
+}

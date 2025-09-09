@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs,0.1.0,draft,,BHAActionTypeVS,BHA Action Type Value Set,"Allowed action type values for BHA CCAR reporting","StructureDefinition/bha-action-type","Internal"
+http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs,0.1.0,draft,,BHAEthnicityVS,BHA Ethnicity Value Set,"Allowed ethnicity values for BHA reporting","StructureDefinition/bha-ethnicity","Internal"

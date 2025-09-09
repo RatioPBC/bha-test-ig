@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "bha-action-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem bha-action-type-cs</b></p><a name=\"bha-action-type-cs\"> </a><a name=\"hcbha-action-type-cs\"> </a><p>This  code system <code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"bha-action-type-cs-01\"> </a></td><td>Admission</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"bha-action-type-cs-03\"> </a></td><td>Update</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"bha-action-type-cs-05\"> </a></td><td>Discharge</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"bha-action-type-cs-06\"> </a></td><td>Evaluation Only</td></tr></table></div>"
+  },
+  "url" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+  "version" : "0.1.0",
+  "name" : "BHAActionTypeCS",
+  "title" : "BHA Action Type Codes",
+  "status" : "draft",
+  "date" : "2025-09-09T19:48:48+00:00",
+  "publisher" : "Colorado Behavioral Health Administration",
+  "contact" : [{
+    "name" : "Colorado Behavioral Health Administration",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://bha.colorado.gov"
+    },
+    {
+      "system" : "email",
+      "value" : "cdhs_bha_provider_support@state.co.us"
+    }]
+  }],
+  "description" : "CCAR action types",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Admission"
+  },
+  {
+    "code" : "03",
+    "display" : "Update"
+  },
+  {
+    "code" : "05",
+    "display" : "Discharge"
+  },
+  {
+    "code" : "06",
+    "display" : "Evaluation Only"
+  }]
+}

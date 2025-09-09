@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs,0.1.0,draft,,BHAActionTypeCS,BHA Action Type Codes,"CCAR action types",
+http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs,0.1.0,draft,,BHAEthnicityCS,BHA Ethnicity Codes,"Ethnicity codes used by BHA",

@@ -1,0 +1,67 @@
+BHATestIG : Validation Results
+=========================================
+
+err = 1, warn = 23, info = 8
+IG Publisher Version: 2.0.17
+Generated Tue Sep 09 19:49:45 UTC 2025. FHIR version 4.0.1 for bha-test-ig#0.1.0 (canonical = http://bha.colorado.gov/fhir/test)
+ Build Errors : 1 / 4 / 0
+ /workspaces/bha-test-ig/fsh-generated/resources/CodeSystem-bha-action-type-cs : 0 / 2 / 2
+ /workspaces/bha-test-ig/fsh-generated/resources/CodeSystem-bha-ethnicity-cs : 0 / 2 / 2
+ /workspaces/bha-test-ig/fsh-generated/resources/ImplementationGuide-bha-test-ig : 0 / 1 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/Patient-BHAPatientExample : 0 / 0 / 2
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-action-type : 0 / 2 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-encounter : 0 / 4 / 2
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-ethnicity : 0 / 1 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-organization : 0 / 1 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-patient : 0 / 0 / 3
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-referral-source : 0 / 2 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/StructureDefinition-bha-update-type : 0 / 2 / 1
+ /workspaces/bha-test-ig/fsh-generated/resources/ValueSet-bha-action-type-vs : 0 / 1 / 2
+ /workspaces/bha-test-ig/fsh-generated/resources/ValueSet-bha-ethnicity-vs : 0 / 1 / 2
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[25].value: Supressed messages file not found
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-bha-action-type-cs.json ==
+INFORMATION: CodeSystem/bha-action-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/bha-action-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/bha-action-type-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-bha-ethnicity-cs.json ==
+INFORMATION: CodeSystem/bha-ethnicity-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/bha-ethnicity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/bha-ethnicity-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-bha-test-ig.json ==
+WARNING: ImplementationGuide/bha-test-ig: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.0.0 released on 2023-05-03, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Patient-BHAPatientExample.json ==
+INFORMATION: Patient/BHAPatientExample: Patient.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs|0.1.0
+== fsh-generated/resources/StructureDefinition-bha-action-type.json ==
+WARNING: StructureDefinition/bha-action-type: StructureDefinition.context[0]: Review the extension type for bha-action-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://bha.colorado.gov/fhir/test/StructureDefinition/bha-action-type'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-bha-encounter.json ==
+INFORMATION: StructureDefinition/bha-encounter: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition/bha-encounter: StructureDefinition.snapshot.element[20].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'
+WARNING: StructureDefinition/bha-encounter: StructureDefinition.snapshot.element[25].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode' to 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0'
+WARNING: StructureDefinition/bha-encounter: StructureDefinition.snapshot.element[29].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActPriority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActPriority' to 'http://terminology.hl7.org/ValueSet/v3-ActPriority|3.0.0'
+WARNING: StructureDefinition.where(url = 'http://bha.colorado.gov/fhir/test/StructureDefinition/bha-encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-bha-ethnicity.json ==
+WARNING: StructureDefinition/bha-ethnicity: StructureDefinition.context[0]: Review the extension type for bha-ethnicity: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-bha-organization.json ==
+WARNING: StructureDefinition.where(url = 'http://bha.colorado.gov/fhir/test/StructureDefinition/bha-organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-bha-patient.json ==
+INFORMATION: StructureDefinition/bha-patient: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/bha-patient: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-bha-referral-source.json ==
+WARNING: StructureDefinition/bha-referral-source: StructureDefinition.context[0]: Review the extension type for bha-referral-source: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://bha.colorado.gov/fhir/test/StructureDefinition/bha-referral-source'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-bha-update-type.json ==
+WARNING: StructureDefinition/bha-update-type: StructureDefinition.context[0]: Review the extension type for bha-update-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://bha.colorado.gov/fhir/test/StructureDefinition/bha-update-type'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-bha-action-type-vs.json ==
+INFORMATION: ValueSet/bha-action-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: ValueSet/bha-action-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-bha-ethnicity-vs.json ==
+INFORMATION: ValueSet/bha-ethnicity-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+WARNING: ValueSet/bha-ethnicity-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

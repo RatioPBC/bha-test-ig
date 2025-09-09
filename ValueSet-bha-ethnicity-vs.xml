@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="bha-ethnicity-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet bha-ethnicity-vs</b></p><a name="bha-ethnicity-vs"> </a><a name="hcbha-ethnicity-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-bha-ethnicity-cs.html"><code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://bha.colorado.gov/fhir/test/ValueSet/bha-ethnicity-vs"/>
+  <version value="0.1.0"/>
+  <name value="BHAEthnicityVS"/>
+  <title value="BHA Ethnicity Value Set"/>
+  <status value="draft"/>
+  <date value="2025-09-09T19:48:48+00:00"/>
+  <publisher value="Colorado Behavioral Health Administration"/>
+  <contact>
+    <name value="Colorado Behavioral Health Administration"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bha.colorado.gov"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cdhs_bha_provider_support@state.co.us"/>
+    </telecom>
+  </contact>
+  <description value="Allowed ethnicity values for BHA reporting"/>
+  <compose>
+    <include>
+      <system value="http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs"/>
+    </include>
+  </compose>
+</ValueSet>

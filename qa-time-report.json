@@ -1,0 +1,639 @@
+{
+  "date" : "Tue, 09 Sep, 2025 19:49:06 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-bha-test-ig.json",
+      "size" : 5072,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 19,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 66
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 3911
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 448
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 57,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-bha-action-type-cs.json",
+      "size" : 574,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 4
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 19,
+          "length" : 19
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 62
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 274
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-bha-ethnicity-cs.json",
+      "size" : 776,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 19,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 95
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 47
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 57,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-BHAPatientExample.json",
+      "size" : 1083,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 330
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-action-type.json",
+      "size" : 1455,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 17,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 19,
+          "length" : 1249
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 452
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 251
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 167
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-encounter.json",
+      "size" : 3528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 17,
+          "length" : 47
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 322
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 25,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 3149
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 423
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 235
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 57,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-ethnicity.json",
+      "size" : 1434,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 475
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 118
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 28
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-organization.json",
+      "size" : 980,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 24
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 19,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 84
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 1185
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 183
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 74
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 57,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-patient.json",
+      "size" : 3863,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 228
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 3564
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 402
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 149
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 57,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-referral-source.json",
+      "size" : 1277,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 438
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 135
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 25
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-bha-update-type.json",
+      "size" : 1251,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 18,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 21,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 35,
+          "length" : 425
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 22
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-bha-action-type-vs.json",
+      "size" : 440,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 19,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 36,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 149
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-bha-ethnicity-vs.json",
+      "size" : 424,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 17,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 17,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 19,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 19,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 36,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 49
+        }
+      ]
+    }
+  ]
+}

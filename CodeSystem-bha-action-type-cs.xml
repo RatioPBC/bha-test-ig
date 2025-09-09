@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="bha-action-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem bha-action-type-cs</b></p><a name="bha-action-type-cs"> </a><a name="hcbha-action-type-cs"> </a><p>This  code system <code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="bha-action-type-cs-01"> </a></td><td>Admission</td></tr><tr><td style="white-space:nowrap">03<a name="bha-action-type-cs-03"> </a></td><td>Update</td></tr><tr><td style="white-space:nowrap">05<a name="bha-action-type-cs-05"> </a></td><td>Discharge</td></tr><tr><td style="white-space:nowrap">06<a name="bha-action-type-cs-06"> </a></td><td>Evaluation Only</td></tr></table></div>
+  </text>
+  <url value="http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs"/>
+  <version value="0.1.0"/>
+  <name value="BHAActionTypeCS"/>
+  <title value="BHA Action Type Codes"/>
+  <status value="draft"/>
+  <date value="2025-09-09T19:48:48+00:00"/>
+  <publisher value="Colorado Behavioral Health Administration"/>
+  <contact>
+    <name value="Colorado Behavioral Health Administration"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://bha.colorado.gov"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cdhs_bha_provider_support@state.co.us"/>
+    </telecom>
+  </contact>
+  <description value="CCAR action types"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="01"/>
+    <display value="Admission"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Update"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Discharge"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Evaluation Only"/>
+  </concept>
+</CodeSystem>

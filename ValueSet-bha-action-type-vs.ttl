@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bha-action-type-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet bha-action-type-vs</b></p><a name=\"bha-action-type-vs\"> </a><a name=\"hcbha-action-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-bha-action-type-cs.html\"><code>http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://bha.colorado.gov/fhir/test/ValueSet/bha-action-type-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BHAActionTypeVS"] ; # 
+  fhir:title [ fhir:v "BHA Action Type Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-09-09T19:48:48+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Colorado Behavioral Health Administration"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Colorado Behavioral Health Administration" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://bha.colorado.gov" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "cdhs_bha_provider_support@state.co.us" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Allowed action type values for BHA CCAR reporting"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

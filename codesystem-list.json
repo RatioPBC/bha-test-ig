@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-action-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BHAActionTypeCS",
+      "title" : "BHA Action Type Codes",
+      "description" : "CCAR action types"
+    },
+    {
+      "url" : "http://bha.colorado.gov/fhir/test/CodeSystem/bha-ethnicity-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BHAEthnicityCS",
+      "title" : "BHA Ethnicity Codes",
+      "description" : "Ethnicity codes used by BHA"
+    }
+  ]
+}
