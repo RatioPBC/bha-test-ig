@@ -6,14 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  fhir-ig-build:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: read
-      pages: write
-      id-token: write
-
     steps:
       - uses: actions/checkout@v4
 
@@ -29,6 +23,7 @@ jobs:
           docker pull ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17
 
       - name: build
+        id: build
         run: |
           docker run \
             --rm \
@@ -38,7 +33,17 @@ jobs:
             -tx n/a
 
       - uses: actions/upload-pages-artifact@v3
+        id: deployment
         with:
           path: ./output/
 
-      - uses: actions/deploy-pages@v4
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
