@@ -9,6 +9,7 @@ This IG defines:
 - Encounter profiles for episodes of care
 - Custom extensions for BHA data elements
 - Terminology (code systems and value sets) for BHA-specific codes
+- And other fun stuff!
 
 ## Getting Started
 
