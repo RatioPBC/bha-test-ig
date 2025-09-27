@@ -1,5 +1,5 @@
 Instance: BHAClientExample
-InstanceOf: BHACliient
+InstanceOf: BHAClient
 Title: "Example BHA Client"
 Description: "Example client for BHA CCAR reporting"
 

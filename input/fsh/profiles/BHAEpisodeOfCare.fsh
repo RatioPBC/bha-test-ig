@@ -11,7 +11,7 @@ Description: "Episode of Care profile for BHA client treatment programs"
 
 // BHASO Encounter ID - required
 * identifier contains clientId 1..1 MS
-* identifier[clientId].type = http://
+* identifier[clientId].type = http://terminology.hl7.org/CodeSystem/encounter-type
 * identifier[clientId].value 1..1 MS
 * identifier[clientId] ^short = "BHASO Encounter ID (10 characters max)"
 
