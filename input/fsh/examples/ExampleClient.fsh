@@ -1,7 +1,7 @@
-Instance: BHAPatientExample
-InstanceOf: BHAPatient
-Title: "Example BHA Patient"
-Description: "Example patient for BHA CCAR reporting"
+Instance: BHAClientExample
+InstanceOf: BHACliient
+Title: "Example BHA Client"
+Description: "Example client for BHA CCAR reporting"
 
 * identifier[clientId].value = "ABC1234567"
 * identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -11,9 +11,10 @@ Description: "Example patient for BHA CCAR reporting"
 * birthDate = "1985-06-15"
 * gender = #female
 
-* extension[ethnicity].valueCodeableConcept = BHAEthnicityCS#1 "Hispanic/Latino (Mexican)"
+//* extension[ethnicity].valueCodeableConcept = BHAEthnicityCS#1 "Hispanic/Latino (Mexican)"
 
 * address.line = "123 Main St"
 * address.city = "Denver" 
 * address.state = "CO"
 * address.postalCode = "80202"
+* address.distrect = "01"
