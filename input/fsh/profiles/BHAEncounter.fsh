@@ -1,17 +1,20 @@
 Profile: BHAEncounter  
-Parent: Encounter
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
 Id: bha-encounter
 Title: "BHA Encounter Profile"
-Description: "Encounter profile for BHA episodes of care"
+Description: "Encounter profile for BHA client admissions and discharges"
 
-* status MS
-* class MS
-* subject 1..1 MS
-* subject only Reference(BHAPatient)
+// * status MS
+// * class MS
+// * subject 1..1 MS
+// * subject only Reference(BHAPatient)
+
+* episodeOfCare MS
 
 // Admission date
 * period 1..1 MS
 * period.start 1..1 MS
+* period.end 1..1 MS
 
 // Service provider
 * serviceProvider 1..1 MS

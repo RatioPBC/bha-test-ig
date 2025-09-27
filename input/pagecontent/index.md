@@ -1,6 +1,7 @@
 # BHA Test Implementation Guide
 
-This is a simplified testing Implementation Guide demonstrating the SUSHI/FSH toolkit for creating FHIR Implementation Guides, using a subset of BHA's CCAR requirements.
+This is a draft FHIR implementation guide to enable standardized behavioral health data exchange and reduce
+provider administrative burden throughout Colorado’s behavioral health ecosystem.
 
 ## Overview
 
@@ -9,7 +10,7 @@ This IG defines:
 - Encounter profiles for episodes of care
 - Custom extensions for BHA data elements
 - Terminology (code systems and value sets) for BHA-specific codes
-- And other fun stuff!
+- 
 
 ## Getting Started
 
