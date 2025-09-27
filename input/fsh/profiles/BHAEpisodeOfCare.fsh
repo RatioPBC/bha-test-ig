@@ -4,6 +4,11 @@ Id: bha-episodeofcare
 Title: "BHA Episode of Care Profile"
 Description: "Episode of Care profile for BHA client treatment programs"
 
+* identifier 1..* MS
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+
 // BHASO Encounter ID - required
 * identifier contains clientId 1..1 MS
 * identifier[clientId].type = http://

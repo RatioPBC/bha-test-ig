@@ -29,7 +29,7 @@ Description: "Client profile for BHA CCAR reporting with required demographics"
 
 // Social Security number when applicable  
 * identifier contains SSN 0..1 MS
-* identifier[SSN].system = http://hl7.org/fhir/sid/us-ssn
+//* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier[SSN].value 1..1 MS
 * identifier[SSN].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
 * identifier[SSN] ^short = "Social Security number"
