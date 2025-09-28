@@ -16,6 +16,13 @@ Description: "Example Client"
 
 * birthDate = "1980-05-15" 
 * gender = #female 1..1 
+* address[+]
+* address[=].line = "123 Main St"
+* address[=].city = "Denver"
+* address[=].state = "CO"
+* address[=].postalCode = "80205" 
+* address[=].district = #01 "Adams" 
+* address[=].period.start = "2023-01-01"
 
 // Required Extensions (1..1)
 * extension[race].url = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
@@ -30,17 +37,6 @@ Description: "Example Client"
 * extension[birthsex].valueCode = #F // Code for Female
 * extension[+].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * extension[=].valueCode = #F
-
-// Required Address (1..1 MS)
-* address[+]
-* address[=].line = "123 Main St"
-* address[=].city = "Denver"
-* address[=].state = "CO"
-* address[=].postalCode = "80205" 
-  // address.district must be from BHACountiesVS
-* address[=].district = #01 "Adams" 
-* address[=].period.start = "2023-01-01"
-
 
 //* identifier[clientId].value = "ABC1234567"
 //* identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
