@@ -25,15 +25,15 @@ Description: "Example Client"
 * address[=].period.start = "2023-01-01"
 
 // Required Extensions (1..1)
-* extension[race].url = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
+* extension[race].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
 * extension[race].extension[0].url = #ombCategory
 * extension[race].extension[0].valueCoding = http://hl7.org/fhir/v3/Race#2028-9 "Asian" // Example OMB Category
 
-* extension[ethnicity].url = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
+* extension[ethnicity].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * extension[ethnicity].extension[0].url = #ombCategory
 * extension[ethnicity].extension[0].valueCoding = http://hl7.org/fhir/v3/Ethnicity#2186-5 "Not Hispanic or Latino" // Example OMB Category
 
-* extension[birthsex].url = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+* extension[birthsex].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * extension[birthsex].valueCode = #F // Code for Female
 * extension[+].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * extension[=].valueCode = #F
