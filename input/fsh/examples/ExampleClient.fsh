@@ -27,12 +27,12 @@ Description: "Example Client"
 
 // Required Extensions (1..1)
 * extension[race].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-* extension[race].extension[0].url = #ombCategory
-* extension[race].extension[0].valueCoding = http://hl7.org/fhir/v3/Race#2028-9 "Asian" // Example OMB Category
+* extension[race].extension[ombCategory].valueCoding = http://hl7.org/fhir/v3/Race#2028-9 // Example OMB Category
+* extension[race].extension[text].valueString = "Asian"
 
 * extension[ethnicity].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-* extension[ethnicity].extension[0].url = #ombCategory
-* extension[ethnicity].extension[0].valueCoding = http://hl7.org/fhir/v3/Ethnicity#2186-5 "Not Hispanic or Latino" // Example OMB Category
+* extension[ethnicity].extension[ombCategory].valueCoding = http://hl7.org/fhir/v3/Ethnicity#2186-5
+* extension[ethnicity].extension[text].valueString = "Not Hispanic or Latino"
 
 * extension[birthsex].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * extension[birthsex].valueCode = #F // Code for Female
