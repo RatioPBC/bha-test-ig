@@ -31,7 +31,7 @@ Description: "Example Client"
 * extension[race].extension[text].valueString = "Asian"
 
 * extension[bharace].valueCodeableConcept = BHARaceCS#02 "Asian"
-* extension[race].extension[text].valueString = "Asian"
+* extension[bharace].extension[text].valueString = "Asian"
 
 * extension[ethnicity].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
 * extension[ethnicity].extension[ombCategory].valueCoding = http://hl7.org/fhir/v3/Ethnicity#2186-5
