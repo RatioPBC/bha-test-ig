@@ -42,9 +42,11 @@ Description: "Client profile for BHA CCAR reporting with required demographics"
 * name ^short = "A name associated with the Client."
 * birthDate 1..1 MS
 * gender 1..1 MS
-* extension[race] 0..1
-* extension[ethnicity] 0..1
-* extension[birthsex] 0..1
+//* extension[race] 0..1
+//* extension[ethnicity] 0..1
+//* extension[birthsex] 0..1
+* extension contains BHARace named bharace 1..1
+* extension[bharace] ^short = "BHA race code"
 
 // Extension for ethnicity (Hispanic/Latino)
 //* extension contains BHAEthnicity named ethnicity 1..1 MS
