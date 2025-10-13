@@ -14,6 +14,12 @@ Description: "Encounter profile for BHA client admissions and discharges"
 * period.start 1..1 MS
 * period.end 1..1 MS
 
+* diagnosis MS
+* diagnosis.condition MS
+* diagnosis.use MS
+* diagnosis.use from BHADiagnosisTypeVS
+* diagnosis.rank MS
+
 // Service provider
 //* serviceProvider 1..1 MS
 //* serviceProvider only Reference(BHAOrganization)

@@ -22,5 +22,5 @@ Description: "Episode of Care profile for BHA client treatment programs"
 * patient ^short = "The Client who is the focus of this episode of care"
 * diagnosis MS
 * period MS
-* period.end 1..1 MS
+* period.end 0..1 MS
 

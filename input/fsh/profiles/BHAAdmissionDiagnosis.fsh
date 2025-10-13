@@ -1,0 +1,12 @@
+Profile: BHAAdmissionDiagnosis  
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis
+Id: bha-admission-diagnosis
+Title: "BHA Admission Diagnosis Profile"
+Description: "Admission Diagnosis profile for BHA client encounters"
+
+// Extension for BHA diagnosis type
+* extension contains 
+    BHADiagnosisType named diagnosisType 1..1 MS
+
+* extension[diagnosisType] ^short = "Diagnosis Type (01=Mental Health, 02=Substance Use Disorder)"
+* encounter 1..1
