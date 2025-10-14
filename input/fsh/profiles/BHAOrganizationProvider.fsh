@@ -1,8 +1,8 @@
 Profile: BHAOrganizationProvider
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 Id: bha-organization-provider
-Title: "BHA Provider Organization Profile"
-Description: "Provider Organization profile for BHASO Providers"
+Title: "Colorado BHA Provider Organization Profile"
+Description: "Provider Organization profile for Colorado BHASO Providers"
 
 * identifier 1..* MS
 //* identifier ^slicing.discriminator.type = #pattern

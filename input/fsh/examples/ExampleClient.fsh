@@ -1,6 +1,6 @@
 Instance: BHAClientExample
 InstanceOf: BHAClient
-Title: "Example BHA Client"
+Title: "Example Colorado BHA Client"
 Description: "Example Client"
 
 // Required Identifiers (1..* MS)

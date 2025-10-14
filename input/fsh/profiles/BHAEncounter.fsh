@@ -1,7 +1,7 @@
 Profile: BHAEncounter  
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
 Id: bha-encounter
-Title: "BHA Encounter Profile"
+Title: "Colorado BHA Encounter Profile"
 Description: "Encounter profile for BHA client admissions and discharges"
 // * status MS
 // * class MS
@@ -15,6 +15,7 @@ Description: "Encounter profile for BHA client admissions and discharges"
 * period.end 1..1 MS
 
 * diagnosis MS
+* diagnosis.condition only Reference(bha-admission-diagnosis) 
 * diagnosis.condition MS
 * diagnosis.use MS
 * diagnosis.use from BHADiagnosisTypeVS

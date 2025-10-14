@@ -1,7 +1,7 @@
 Profile: BHAOrganizationBHASO
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 Id: bha-organization-bhaso
-Title: "BHA BHASO Organization Profile"
+Title: "Colorado BHA BHASO Organization Profile"
 Description: "Organization profile for BHA service providers"
 
 * identifier 1..* MS
