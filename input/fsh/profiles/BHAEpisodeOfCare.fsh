@@ -18,6 +18,7 @@ Description: "Episode of Care profile for BHA client services"
 
 * status MS
 * type MS
+* type from BHAServiceIdentifierVS
 * patient MS
 * patient ^short = "The Client who is the focus of this service"
 * diagnosis MS
