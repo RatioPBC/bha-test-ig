@@ -1,10 +1,5 @@
 # bha-test-ig
 
-deviations from [CLAUDE.md](CLAUDE.md):
-
-* uses `package.json` instead of global
-* run sushi with `npm run sushi`
-
 try it out:
 
 1. clone the repo, enter the directory
