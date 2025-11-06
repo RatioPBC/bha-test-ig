@@ -2,7 +2,8 @@ Profile: BHAClient
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 Id: bha-client
 Title: "Colorado BHA Client Profile"
-Description: "Client profile for BHA reporting"
+Description: "Ths profile specifies the mandatory and must support data elements for capturing demographic information 
+for Colorado BHA clients in order to support the BHA's annual reporting requirements."
 
 * identifier 1..* MS
 * identifier ^slicing.discriminator.type = #pattern
@@ -15,12 +16,6 @@ Description: "Client profile for BHA reporting"
 * identifier[clientId].value 1..1 MS
 * identifier[clientId] ^short = "The client's BHASO Client ID (10 characters max)"
 
-// Medicaid ID when applicable  
-* identifier contains medicaidId 0..1 MS
-* identifier[medicaidId].type = http://terminology.hl7.org/CodeSystem/v2-0203#MA
-* identifier[medicaidId].value 1..1 MS
-* identifier[medicaidId] ^short = "The client's Medicaid ID (X999999 format)"
-
 // Colorado PEAK state ID when applicable  
 * identifier contains PEAKID 0..1 MS
 * identifier[PEAKID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
@@ -29,16 +24,21 @@ Description: "Client profile for BHA reporting"
 
 // Social Security number when applicable  
 * identifier contains SSN 0..1 MS
-//* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn"
+//* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn" KEEP THIS COMMENTED
+//* identifier[SSN].value 1..1 MS
+//* identifier[SSN].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
+//* identifier[SSN] ^short = "The client's Social Security number"
+//* identifier[SSN].value ^extension[0].url = http://hl7.org/fhir/StructureDefinition/data-absent-reason
+
+//* identifier[SSN].value ^extension[0].valueCode = #unknown
+
+* identifier[SSN].system 1..1 MS
+* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier[SSN].value 1..1 MS
 * identifier[SSN].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
 * identifier[SSN] ^short = "The client's Social Security number"
-* identifier[SSN].value ^extension[0].url = http://hl7.org/fhir/StructureDefinition/data-absent-reason
-//* identifier[SSN].value ^extension[0] MS 1..1
-//* identifier[SSN].value ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
-//* identifier[SSN].value ^extension[0].valueCode = #unknown
-
-
+* identifier[SSN].extension contains 
+    http://hl7.org/fhir/StructureDefinition/data-absent-reason named data-absent-reason 0..1 MS
 
 // Required demographics
 // NOTE: Race, Ethnicity, and BirthSex should be restored to 1..1 when I can debug the example Client 
@@ -67,7 +67,4 @@ Description: "Client profile for BHA reporting"
 * contact.telecom contains phone 0..1 MS
 * contact.telecom[phone].system = #phone
 * contact.telecom[phone].value 0..1 MS
-* contact.telecom contains email 0..1 MS
-* contact.telecom[email].system = #email
-* contact.telecom[email].value 0..1 MS
 * extension contains http://hl7.org/fhir/us/military-service/StructureDefinition/military-service-veteran-status named USVeteranStatus 0..1 MS

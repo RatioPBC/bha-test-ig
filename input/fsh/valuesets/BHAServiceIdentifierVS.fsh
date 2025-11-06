@@ -1,6 +1,6 @@
 ValueSet: BHAServiceIdentifierVS
 Id: bha-service-identifier-vs
-Title: "BHA BHA Service Identifier Codes Value Set"
+Title: "BHA Service Identifier Codes Value Set"
 Description: "Service identifiers for BHA admissions"
 
 * ^url = "https://ratiopbc.github.io/bha-test-ig/ValueSet-bha-service-identifier-vs"

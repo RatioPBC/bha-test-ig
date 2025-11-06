@@ -1,17 +1,18 @@
 # BHA Test Implementation Guide
 
-This is a draft FHIR implementation guide to enable standardized behavioral health data exchange and reduce
+This is a draft FHIR implementation guide (IG) to enable standardized behavioral health data exchange and reduce
 provider administrative burden throughout Colorado’s behavioral health ecosystem.
 
 ## Overview
 
-This IG defines:
-- Patient profiles with BHA-specific identifiers and demographics
-- Encounter profiles for episodes of care
-- Custom extensions for BHA data elements
-- Terminology (code systems and value sets) for BHA-specific codes
-- 
+The Colorado Behavioral Health Administration (BHA) needs to gather information related to BHA clients and their treatment. The majority of this information must be collected from clinical sites. This IG addresses the exchange of relevant information between clinical sites and Colorado Behavioral Health Administration Service Organizations (BHASOs).
+
+This IG includes:
+
+- Profiles for BHA client demographic information, admission and discharge information, diagnosis information, and other related information
+- Terminology specifications (code systems and value sets) for BHA-specific codes
+- Example instances of FHIR resources demonstrating how FHIR data in the formats specified here can capture the information for example BHA client criteria
 
 ## Getting Started
 
-See the [Implementation Guidance](guidance.html) for details on how to use these profiles.
+See the [Implementation Guidance](guidance.html) for further guidance.
