@@ -9,5 +9,5 @@ Description: "Admission Diagnosis profile for BHA client encounters"
     BHADiagnosisType named diagnosisType 1..1 MS
 
 * extension[diagnosisType] ^short = "Diagnosis Type (MH, SUD)"
-* encounter only Reference(bha-encounter)
+* encounter only Reference(bha-admission-encounter)
 * encounter 1..1
