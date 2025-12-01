@@ -1,6 +1,4 @@
-Alias: $loinc = http://loinc.org
-
-Instance: admission-example
+Instance: BHAAdmissionQuestionnaireExample
 InstanceOf: QuestionnaireResponse
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
@@ -9,8 +7,8 @@ Usage: #example
 * subject = Reference(Patient/example) "Emma Jones"
 * authored = "2025-10-28T18:30:40-07:00"
 * author = Reference(Practitioner/practitioner-1)
-* item.linkId = "/admission"
-* item.text = "Colorado BHA Admission Questionnaire"
+//* item.linkId = "/admission"
+//* item.text = "Colorado BHA Admission Questionnaire"
 * item.item[0].linkId = "/FIRST_CONTACT_DATE"
 * item.item[=].text = "Date of First Contact"
 * item[=].answer.valueDateTime = "2025-07-01"

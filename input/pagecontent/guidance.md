@@ -22,8 +22,8 @@ captured and transmitted from provider sites to Behavior Health Administrative S
 [ When available, this section will include a table mapping from UDM data elements to FHIR data elements in this IG. ]
 
 
-| UDM File | UDM Field Name                           | FHIR Path                                         | FHIR Profile or Resource                             |
-| :------- | :--------------------------------------- | :------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| UDM File | UDM Field Name                           | FHIR Path                                         | FHIR Profile or Resource                                                                                                                                                                                   |
+| -------- | ---------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Client   | Effective Date                           | Provenance.recorded                               | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html)                                         |
 | Client   | Colorado PEAK State ID<br>/ Universal ID | Patient.identifier<br>QuestionnaireResponse       | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
 | Client   | Trails Identifier                        | Patient.identifier<br>QuestionnaireResponse       | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
@@ -49,9 +49,6 @@ captured and transmitted from provider sites to Behavior Health Administrative S
 | Client   | Last known address line 1                | Patient.address.line                              | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
 | Client   | Last known address line 2                | Patient.address.line                              | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
 | Client   | Last known city                          | Patient.address.city                              | [https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
-📋 Copy
-Clear
-Buy Me a Coffee at ko-fi.com
 
 // Note to maintainers: To update or recreate the table above, I suggest using a spreadsheet-to-Markdown converter, such as the one
 at https://tabletomarkdown.com/convert-spreadsheet-to-markdown/ 
