@@ -4,7 +4,7 @@ InstanceOf: BHAService
 Description: "Example EpisodeOfCare record for a BHA service"
 
 Usage: #example
-* meta.profile = "/StructureDefinition-bha-service.html"
+
 // * status = #final
 // Required Identifiers (1..* MS)
 //* identifier[BHASOEncounterId].type = #BHASOID
