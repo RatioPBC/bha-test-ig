@@ -3,8 +3,8 @@ InstanceOf: QuestionnaireResponse
 Description: "Example Responses to Admission Questionnaire Questions"
 
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
-* questionnaire = "http://hl7.org/fhir/us/core/Questionnaire/admission-example"
+// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
+// * questionnaire = "http://hl7.org/fhir/us/core/Questionnaire/admission-example"
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"
 * authored = "2025-10-28T18:30:40-07:00"

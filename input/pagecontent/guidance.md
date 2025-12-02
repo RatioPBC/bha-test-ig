@@ -21,7 +21,33 @@ captured and transmitted from provider sites to Behavior Health Administrative S
 
 ##### UDM Client File
 
-[ table goes here ]
+| UDM File | UDM Field Name                           | FHIR Path                                         | FHIR Profile or Resource                                                                                                                      |
+| -------- | ---------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Client   | Effective Date                           | Provenance.recorded                               | [US Core Provenance](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html)                                         |
+| Client   | Colorado PEAK State ID<br>/ Universal ID | Patient.identifier<br>QuestionnaireResponse       | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | Trails Identifier                        | Patient.identifier<br>QuestionnaireResponse       | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | CCAR Client Identifier                   | Patient.identifier<br>QuestionnaireResponse       | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | DACODS Client Identifier                 | Patient.identifier<br>QuestionnaireResponse       | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | DOB                                      | Patient.birthDate                                 | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Last Name                                | Patient.name.family                               | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | First Name                               | Patient.name.given                                | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Middle Name/Initial                      | Patient.name.given                                | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Name Suffix                              | Patient.name.suffix                               | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Social Security Number                   | Patient.identifier                                | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | County of Residence                      | Patient.address.district                          | [FHIR Address datatype](https://hl7.org/fhir/R4/datatypes.html#Address)                                                                       |
+| Client   | Zip Code of Residence                    | Patient.address.postalCode                        | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Race Codes                               | Patient.extension:race                            | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Ethnicity                                | Patient.extension:ethnicity                       | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Household Language                       | Patient.communication.language                    | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Sex at Birth                             | Patient.extension:birthsex                        | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Gender Identity                          | Patient.extension:gender                          | [FHIR Gender Identity Extension](https://hl7.org/fhir/extensions/StructureDefinition-individual-genderIdentity.html)                          |
+| Client   | Sexual Orientation                       | Observation                                       | [US Core Observation Sexual Orientation](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-sexual-orientation.html) |
+| Client   | Child Welfare Involvement                | QuestionnaireResponse                             | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | Disability Code(s)                       | QuestionnaireResponse                             | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
+| Client   | Veteran Status                           | Patient.extension:military-service-veteran-status | [FHIR US Military Service Veteran Status Extension](https://hl7.org/fhir/us/military-service/StructureDefinition-usveteran.html)              |
+| Client   | Last known address line 1                | Patient.address.line                              | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Last known address line 2                | Patient.address.line                              | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
+| Client   | Last known city                          | Patient.address.city                              | [US Core Patient](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html)                                               |
 
 ##### UDM Admission File
 
@@ -81,6 +107,7 @@ constraint or modification. Those profiles therefore do not have corresponding B
 will need to be aware of them in order to ensure the full set of data is transmitted.
 
 The US Core profiles that are used for BHA reporting without further constraint are:
+- [US Core Condition Encounter Diagnosis Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-encounter-diagnosis.html)
 - [US Core Observation Pregnancy Status Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html)
 - [US Core Observation Sexual Orientation Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-sexual-orientation.html)
 - [US Core Organization Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization.html)
@@ -88,4 +115,4 @@ The US Core profiles that are used for BHA reporting without further constraint 
 - [US Core QuestionnaireResponse Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)
 <!-- - [US Core RelatedPerson Profile](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-relatedperson.html) -->
 
-See the examples listed on the [Artifacts](/artifacts.html) page for instances of how those profiles are used.
+See the examples listed on the [Artifacts](/bha-test-ig/artifacts.html) page for instances of how those profiles are used.
