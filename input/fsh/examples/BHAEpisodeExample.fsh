@@ -1,7 +1,7 @@
 
-Instance: BHAServiceExample
-InstanceOf: BHAService
-Description: "Example EpisodeOfCare record for a BHA service"
+Instance: BHAEpisodeExample
+InstanceOf: BHAEpisode
+Description: "Example Episode of Care record for a BHA service/admission"
 
 Usage: #example
 
