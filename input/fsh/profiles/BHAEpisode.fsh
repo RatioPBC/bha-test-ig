@@ -9,12 +9,12 @@ Description: "BHA episode profile for client admissions/services"
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 
-// BHASO Encounter ID - required
-* identifier contains BHASOEncounterId 1..1 MS
-* identifier[BHASOEncounterId].type from https://ratiopbc.github.io/bha-test-ig/ValueSet-bha-encounter-id-type-vs (required)
-* identifier[BHASOEncounterId].type = BHAEncounterIdTypeCS#BHASOID "BHASO Encounter ID"
-* identifier[BHASOEncounterId].value 1..1 MS
-* identifier[BHASOEncounterId] ^short = "BHASO Encounter ID (10 characters max)"
+// BHASO Admission Identifier -- not expected from point of care systems
+* identifier contains BHASOEpisodeId 0..1 MS
+* identifier[BHASOEpisodeId].type from https://ratiopbc.github.io/bha-test-ig/ValueSet-bha-episode-id-type-vs (required)
+* identifier[BHASOEpisodeId].type = BHAEpisodeIdTypeCS#BHASOID "BHASO Episode ID"
+* identifier[BHASOEpisodeId].value 1..1 MS
+* identifier[BHASOEpisodeId] ^short = "BHASO Admission Identifier (10 characters max)"
 
 
 * status MS
