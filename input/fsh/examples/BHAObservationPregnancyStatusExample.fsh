@@ -4,6 +4,7 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: BHAObservationPregnancyStatusExample
 InstanceOf: Observation
+Title: "Example Pregnancy Status Observation"
 Description: "Example Observation Record for pregnancy status"
 
 Usage: #example

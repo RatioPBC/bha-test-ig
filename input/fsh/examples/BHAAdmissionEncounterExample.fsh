@@ -3,6 +3,7 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: BHAAdmissionEncounterExample
 InstanceOf: BHAAdmissionEncounter
+Title: "Example Admission Encounter"
 Description: "Example Encounter for a BHA Episode."
 
 Usage: #example
