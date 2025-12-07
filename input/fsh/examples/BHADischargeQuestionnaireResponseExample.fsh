@@ -1,4 +1,4 @@
-Instance: BHADischargeQuestionnaireExample
+Instance: BHADischargeQuestionnaireResponseExample
 InstanceOf: QuestionnaireResponse
 Title: "Example Discharge Questionnaire Responses"
 Description: "Example Responses to Discharge Questionnaire Questions"
@@ -10,7 +10,7 @@ Usage: #example
 * subject = Reference(Patient/example) "Mickey Mouse"
 * authored = "2025-10-28T18:30:40-07:00"
 //* author = Reference(Practitioner/practitioner-1)
-* item[+].linkId = "END_OF_TREATMENT_REASON"
+* item[0].linkId = "END_OF_TREATMENT_REASON"
 * item[=].text = "End of Treatment Reason"
 * item[=].answer.valueString = "02"
 * item[+].linkId = "ARRESTS_PAST_30_DAYS"

@@ -1,4 +1,4 @@
-Instance: BHASubstanceUseDisorderQuestionnaireExample
+Instance: BHASubstanceUseDisorderQuestionnaireResponseExample
 InstanceOf: QuestionnaireResponse
 Title: "Example Substance Use Disorder Questionnaire Responses"
 Description: "Example Responses to Substance Use Disorder Questionnaire Questions"
@@ -10,7 +10,7 @@ Usage: #example
 * subject = Reference(Patient/example) "Mickey Mouse"
 * authored = "2025-10-28T18:30:40-07:00"
 //* author = Reference(Practitioner/practitioner-1)
-* item[+].linkId = "EFFECTIVE_DATE"
+* item[0].linkId = "EFFECTIVE_DATE"
 * item[=].text = "Effective Date"
 * item[=].answer.valueString = "2025-08-02"
 * item[+].linkId = "ASAM_LEVEL_OF_CARE"

@@ -1,4 +1,4 @@
-Instance: BHAAdmissionQuestionnaireExample
+Instance: BHAAdmissionQuestionnaireResponseExample
 InstanceOf: QuestionnaireResponse
 Title: "Example Admission Questionnaire Responses"
 Description: "Example Responses to Admission Questionnaire Questions"
