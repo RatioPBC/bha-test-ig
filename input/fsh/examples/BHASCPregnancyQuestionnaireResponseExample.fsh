@@ -1,6 +1,6 @@
-Instance: BHASubstanceUseDisorderQuestionnaireExample
+Instance: BHASCPregnancyQuestionnaireResponseExample
 InstanceOf: QuestionnaireResponse
-Title: "Example SC Pregnancy and Postpartum Use Disorder Questionnaire Responses"
+Title: "Example SC Pregnancy and Postpartum Questionnaire Responses"
 Description: "Example Responses to Special Connections Pregnancy and Postpartum Questionnaire Questions"
 
 Usage: #example
