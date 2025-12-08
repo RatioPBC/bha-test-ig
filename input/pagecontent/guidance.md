@@ -19,8 +19,6 @@ captured and transmitted from provider sites to Behavior Health Administrative S
 
 #### UDM to FHIR Mapping
 
- Outer pipes  Cell padding 
-No sorting
 | UDM File                | UDM Field Name                                                                                     | FHIR Path                                                                                                                                     | FHIR Profile or Resource                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | Client                  | Effective Date                                                                                     | Provenance.recorded                                                                                                                           | [US Core Provenance](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html)                                         |
@@ -136,9 +134,6 @@ No sorting
 | SC Baby                 | Baby First Name                                                                                    | QuestionnaireResponse                                                                                                                         | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
 | SC Baby                 | Baby Middle Name or Initial                                                                        | QuestionnaireResponse                                                                                                                         | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
 | SC Baby                 | Baby Sex at Birth                                                                                  | QuestionnaireResponse                                                                                                                         | [US Core QuestionnaireResponse](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html)                    |
-📋 Copy
-Clear
-Buy Me a Coffee at ko-fi.com
 <!-- 
 ##### UDM Client File                                             |
 
