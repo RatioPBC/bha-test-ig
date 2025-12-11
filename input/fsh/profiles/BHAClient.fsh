@@ -10,17 +10,17 @@ for Colorado BHA clients in order to support the BHA's annual reporting requirem
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 
-// BHASO Client ID - required
-* identifier contains clientId 1..1 MS
-* identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
-* identifier[clientId].value 1..1 MS
-* identifier[clientId] ^short = "The client's BHASO Client ID (10 characters max)"
+// BHASO Client ID - not expected to come from clinic
+// * identifier contains clientId 1..1 MS
+// * identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
+// * identifier[clientId].value 1..1 MS
+// * identifier[clientId] ^short = "The client's BHASO Client ID (10 characters max)"
 
 // Colorado PEAK state ID when applicable  
-* identifier contains PEAKID 0..1 MS
-* identifier[PEAKID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
-* identifier[PEAKID].value 1..1 MS
-* identifier[PEAKID] ^short = "The client's PEAK ID (X999999 format)"
+// * identifier contains PEAKID 0..1 MS
+// * identifier[PEAKID].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
+// * identifier[PEAKID].value 1..1 MS
+// * identifier[PEAKID] ^short = "The client's PEAK ID (X999999 format)"
 
 // Social Security number when applicable  
 * identifier contains SSN 0..1 MS

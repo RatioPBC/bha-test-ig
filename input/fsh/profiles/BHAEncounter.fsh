@@ -22,7 +22,7 @@ Description: "Encounter profile for client visits and encounters related to BHA 
 * diagnosis.rank MS
 
 // Service provider
-//* serviceProvider 1..1 MS
+* serviceProvider 1..1 MS
 //* serviceProvider only Reference(BHAOrganization)
 
 // Extensions for BHA-specific data

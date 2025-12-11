@@ -3,10 +3,15 @@ InstanceOf: BHAClient
 Title: "Example Colorado BHA Client"
 Description: "Example Client"
 
-// Required Identifiers (1..* MS)
-* identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
-* identifier[clientId].value = "C123456789"
-* identifier[clientId].system = "http://bha.colorado.gov/identifiers/client-id" 
+// Optional Identifiers (1..* MS)
+// * identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI
+// * identifier[clientId].value = "C123456789"
+// * identifier[clientId].system = "http://bha.colorado.gov/identifiers/client-id" 
+
+* identifier[SSN].type = http://terminology.hl7.org/CodeSystem/v2-0203#SS
+* identifier[SSN].value = "111-11-1111"
+* identifier[SSN].system = "http://hl7.org/fhir/sid/us-ssn" 
+
 
 // Demographics
 * name[0] 
