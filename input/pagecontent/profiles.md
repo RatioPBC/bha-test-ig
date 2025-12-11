@@ -19,3 +19,6 @@ The following profiles have been defined for this implementation guide.
 
 ### BHA Episode Profile
 [BHA Episode Profile](StructureDefinition-bha-episode.html)
+
+### BHA Organization Profile
+[BHA Organization Profile](StructureDefinition-bha-organization.html)

@@ -18,11 +18,14 @@ Description: "Example Client"
   * use = #official
   * family = "Jones"
   * given[0] = "Emma"
+  * given[1] = "Nora"
+  * suffix[0] = "Jr"
 
 * birthDate = "1980-05-15" 
 * gender = #female 
 * address[+]
-* address[=].line = "123 Main St"
+* address[=].line[+] = "123 Main St"
+* address[=].line[+] = "Suite 300"
 * address[=].city = "Denver"
 * address[=].state = "CO"
 * address[=].postalCode = "80205" 
@@ -43,6 +46,15 @@ Description: "Example Client"
 
 * extension[birthsex].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
 * extension[birthsex].valueCode = #F // Code for Female
+
+* extension[USVeteranStatus].url = "http://hl7.org/fhir/us/military-service/StructureDefinition/military-service-veteran-status"
+* extension[USVeteranStatus].valueBoolean = true
+
+
+
+* communication.language = urn:ietf:bcp:47#es "Spanish"
+* communication.language.text = "Spanish"
+* communication.preferred = true
 
 //* identifier[clientId].value = "ABC1234567"
 //* identifier[clientId].type = http://terminology.hl7.org/CodeSystem/v2-0203#PI

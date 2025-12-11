@@ -1,15 +1,15 @@
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
 
 Instance: BHAOrganizationExample
-InstanceOf: Organization
+InstanceOf: BHAOrganization
 Title: "Example Organization"
 Description: "Example Organization record for a BHA clinic."
 
 Usage: #example
 
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
-* identifier.system = "http://hl7.org/fhir/sid/us-npi"
-* identifier.value = "1234567893"
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[NPI].value = "1234567893"
 
 * active = true
 * type = $organization-type#prov
