@@ -54,4 +54,4 @@ Usage: #example
 * item[=].answer.valueString = "03"
 * item[+].linkId = "CHILDREN_LIVING_WITH_CLIENT"
 * item[=].text = "Children Living in home with you"
-* item[=].answer.valueInteger = "1"
+* item[=].answer.valueInteger = 1
