@@ -18,10 +18,10 @@ Usage: #example
 * item[=].answer.valueDate = "2025-06-20"
 * item[+].linkId = "WEIGHT_LBS"
 * item[=].text = "Baby Weight Pounds"
-* item[=].answer.valueString = "6"
+* item[=].answer.valueDecimal = 6
 * item[+].linkId = "WEIGHT_OZ"
 * item[=].text = "Baby Weight Ounces"
-* item[=].answer.valueString = "2"
+* item[=].answer.valueDecimal = 2
 * item[+].linkId = "LAST_NAME"
 * item[=].text = "Baby Last Name"
 * item[=].answer.valueString = "White"

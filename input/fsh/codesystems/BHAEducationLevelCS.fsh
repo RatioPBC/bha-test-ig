@@ -1,0 +1,23 @@
+CodeSystem: BHAEducationLevelCS
+Id: bha-education-level-cs
+Title: "BHA Education Level"
+Description: "Code system for education levels used in BHA admission process"
+
+* #PK "The client has less than a Kindergarten education/No Formal education"
+* #00 "Kindergarten"
+* #01 "Grade 1"
+* #02 "Grade 2"
+* #03 "Grade 3"
+* #04 "Grade 4"
+* #05 "Grade 5"
+* #06 "Grade 6"
+* #07 "Grade 7"
+* #08 "Grade 8"
+* #09 "Grade 9"
+* #10 "Grade 10"
+* #11 "Grade 11"
+* #12 "Grade 12 or GED"
+* #14 "Some College"
+* #16 "College Degree"
+* #18 "Masters Degree"
+* #20 "Doctoral Degree"

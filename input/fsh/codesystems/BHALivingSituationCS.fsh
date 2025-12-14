@@ -1,0 +1,21 @@
+CodeSystem: BHALivingSituationCS
+Id: bha-living-situation
+Title: "BHA Living Situation"
+Description: "Code system for living situations used in BHA admission process"
+
+* #1 "Correctional facility / Jail"
+* #2 "Inpatient"
+* #3 "ATU, Adults Only"
+* #4 "Residential Treatment / Group (Youth)"
+* #5 "Foster Home (Youth)"
+* #6 "Boarding Home (Adult)"
+* #7 "Group Home (Adult)"
+* #8 "Nursing Home"
+* #9 "Residential Facility (MH Adult)"
+* #10 "Residential Facility (Other)"
+* #11 "Sober Living"
+* #12 "Houseless"
+* #13 "Supported Housing"
+* #14 "Assisted Living"
+* #15 "Independent Living"
+* #16 "Halfway House"
