@@ -1,11 +1,11 @@
-Instance: BHAAdmissionQuestionnaireResponseExample
+Instance: BHAAdmissionQuestionnaireResponseExampleOld
 InstanceOf: QuestionnaireResponse
-Title: "Example BHA Admission Questionnaire Responses"
-Description: "Example Responses to BHA Admission Questionnaire Questions"
+Title: "Example Admission Questionnaire Responses"
+Description: "Example Responses to Admission Questionnaire Questions"
 
 Usage: #example
 // * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
-* questionnaire = Canonical(BHAAdmissionQuestionnaire)
+* questionnaire = "/Questionnaire/BHA-admission"
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"
 * authored = "2025-10-28T18:30:40-07:00"
@@ -18,73 +18,73 @@ Usage: #example
 * item[=].answer.valueDate = "2025-07-15"
 * item[+].linkId = "MEDICATION_ASSISTED_OPIOID_THERAPY"
 * item[=].text = "Medication Assisted Opioid Therapy"
-* item[=].answer.valueBoolean = true
+* item[=].answer.valueString = "1"
 * item[+].linkId = "REFERRAL_SOURCE"
 * item[=].text = "Referral Source"
-* item[=].answer.valueCoding = BHAReferralSourceCS#1
+* item[=].answer.valueString = "01"
 * item[+].linkId = "ARRESTS_PAST_30_DAYS"
 * item[=].text = "Arrests in Past 30 Days"
 * item[=].answer.valueInteger = 1
 * item[+].linkId = "EMPLOYMENT_STATUS"
 * item[=].text = "Employment Status"
-* item[=].answer.valueCoding = BHAEmploymentStatusCS#01
+* item[=].answer.valueString = "01"
 * item[+].linkId = "MARITAL_STATUS"
 * item[=].text = "Marital Status"
-* item[=].answer.valueCoding = BHAMaritalStatusCS#01
+* item[=].answer.valueString = "01"
 * item[+].linkId = "LIVING_SITUATION"
 * item[=].text = "Living Situation"
-* item[=].answer.valueCoding = BHALivingSituationCS#1
+* item[=].answer.valueString = "01"
 * item[+].linkId = "MONTHLY_INCOME"
 * item[=].text = "Monthly Income"
-* item[=].answer.valueQuantity.value = 999
-* item[=].answer.valueQuantity.unit = "USD"
-* item[=].answer.valueQuantity.system = "urn:iso:std:iso:4217"
-* item[=].answer.valueQuantity.code = #USD
+* item[=].answer.valueInteger = 999
 * item[+].linkId = "PRIMARY_INCOME_SOURCE"
 * item[=].text = "Primary Source of income/support for client (or for client's parent if client >18 years of age)"
-* item[=].answer.valueCoding = BHAIncomeSourceCS#2
+* item[=].answer.valueString = "02"
 * item[+].linkId = "PREGNANCY_STATUS"
 * item[=].text = "Pregnancy Status"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "WITHIN_1_YEAR_POSTPARTUM_STATUS"
 * item[=].text = "Within 1 Year Postpartum Status"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "SPECIAL_CONNECTIONS_ENROLLMENT"
 * item[=].text = "Enrollment in Special Connections"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "ACT_ENROLLMENT"
 * item[=].text = "Enrollment in ACT?"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "ASCENT_ENROLLMENT"
 * item[=].text = "Enrollment in Ascent (FEP)?"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "NUMBER_DEPENDENT_CHILDREN"
 * item[=].text = "Number of Dependent Children"
 * item[=].answer.valueInteger = 0
 * item[+].linkId = "SELF_HELP_ATTENDANCE"
 * item[=].text = "Self Help Attendance (Last 30 days at admission)/ Peer Support Attendance"
-* item[=].answer.valueInteger = 0
+* item[=].answer.valueString = "0"
 * item[+].linkId = "TOTAL_SUBSTANCE_USE_PRIOR_TREATMENT"
 * item[=].text = "Substance Use Prior Treatment (Total Lifetime admissions)"
 * item[=].answer.valueInteger = 9
 * item[+].linkId = "PSYCHIATRIC_HOSPITAL_ADMISSION"
 * item[=].text = "Psychiatric Hospital Admission (Last 30 days)"
-* item[=].answer.valueBoolean = true
+* item[=].answer.valueString = "1"
 * item[+].linkId = "LEGAL_STATUS"
 * item[=].text = "Legal Status"
-* item[=].answer.valueCoding = BHALegalStatusCS#02
+* item[=].answer.valueString = "02"
+* item[+].linkId = "INVOLUNTARY_REASON"
+* item[=].text = "Involuntary Reason"
+* item[=].answer.valueString = ""
 * item[+].linkId = "CRIMINAL_JUSTICE_INVOLVEMENT"
 * item[=].text = "Criminal Justice Involvement"
-* item[=].answer.valueBoolean = false
+* item[=].answer.valueString = "0"
 * item[+].linkId = "EDUCATION_LEVEL"
 * item[=].text = "Education Level"
-* item[=].answer.valueCoding = BHAEducationLevelCS#14
-* item[+].linkId = "SCHOOL_ATTENDANCE_STATUS"
+* item[=].answer.valueString = "14"
+* item[+].linkId = "SCHOOL_ATTENDANCE"
 * item[=].text = "School Attendance Status (in the previous 3 months)"
-* item[=].answer.valueCoding = BHASchoolAttendanceStatusCS#03
+* item[=].answer.valueString = "03"
 * item[+].linkId = "PSYCHIATRIC_ER_VISIT_6_MONTHS"
 * item[=].text = "Visit to Psychiatric ER in last 6 months"
 * item[=].answer.valueInteger = 0
 * item[+].linkId = "COMMUNICATION_ACCOMMODATIONS"
-* item[=].text = "Communication Accommodations"
-* item[=].answer.valueBoolean = true
+* item[=].text = "Communication Accomodations"
+* item[=].answer.valueString = "1"
