@@ -54,3 +54,4 @@ run = "docker login ghcr.io -u $GITHUB_USER"
 description = "push fhir-ig-publisher image"
 run = "docker push ghcr.io/ratiopbc/fhir-ig-publisher:2.0.17"
 ```
+
