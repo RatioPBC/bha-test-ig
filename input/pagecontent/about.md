@@ -1,5 +1,5 @@
 
-This Implementation Guide is published as part of a project funded by [Colorado Behavioral Health Administration (BHA)](https://bha.colorado.gov/) and led by RatioPBC. The purpose of this project is to enable standardized behavioral health data exchange and reduce provider administrative burden throughout Colorado’s behavioral health ecosystem.
+This Implementation Guide is published as part of a project funded by [Colorado Behavioral Health Administration (BHA)](https://bha.colorado.gov/). The purpose of this project is to enable standardized behavioral health data exchange and reduce provider administrative burden throughout Colorado’s behavioral health ecosystem.
 
 ### Download
 
