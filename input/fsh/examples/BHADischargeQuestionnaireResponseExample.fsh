@@ -1,10 +1,9 @@
 Instance: BHADischargeQuestionnaireResponseExample
-InstanceOf: QuestionnaireResponse
+//InstanceOf: QuestionnaireResponse
+InstanceOf: $us-core-questionnaireresponse
 Title: "Example Discharge Questionnaire Responses"
 Description: "Example Responses to Discharge Questionnaire Questions"
-
 Usage: #example
-// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
 * questionnaire = Canonical(BHADischargeQuestionnaire)
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"

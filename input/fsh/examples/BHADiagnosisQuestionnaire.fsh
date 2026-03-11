@@ -1,11 +1,11 @@
 Instance: BHADiagnosisQuestionnaire
-InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
+InstanceOf: $sdc-questionnaire
 //Id: bha-diagnosis-questionnaire
 Title: "BHA Diagnosis Questionnaire"
 Description: "Behavioral Health Administration diagnosis questionnaire for collecting patient clinical information during a behavioral health episode of care"
 Usage: #example
 
-* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHA-diagnosis"
+* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHADiagnosisQuestionnaire"
 * version = "1.0.0"
 * name = "BHADiagnosisQuestionnaire"
 * title = "BHA Diagnosis Questionnaire"

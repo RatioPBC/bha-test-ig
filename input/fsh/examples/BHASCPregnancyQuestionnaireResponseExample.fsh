@@ -1,10 +1,9 @@
 Instance: BHASCPregnancyQuestionnaireResponseExample
-InstanceOf: QuestionnaireResponse
+//InstanceOf: QuestionnaireResponse
+InstanceOf: $us-core-questionnaireresponse
 Title: "Example SC Pregnancy and Postpartum Risk Screening Questionnaire Responses"
 Description: "Example Responses to Special Connections Pregnancy and Postpartum Risk Screening Questionnaire Questions"
-
 Usage: #example
-// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
 * questionnaire = Canonical(BHASCPregnancyPostpartumRiskQuestionnaire)
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"

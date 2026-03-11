@@ -20,6 +20,7 @@ This guide is broken down into sections.
 
 - [Guidance](guidance.html) for further guidance.
 - [Profiles](profiles.html) for the FHIR profiles defined in this IG.
+- [Questionnaires](questionnaires.html) for the FHIR questionnaires defined in this IG.
 - [Terminology](terminology.html) for the code systems and value sets defined in this IG.
 - [Artifacts](artifacts.html) for the complete list of all artifacts defined in this IG, including profiles, value sets, code systems, and examples.
 - [About](about.html) for more information about this IG, including how to download the resources and view the source code.

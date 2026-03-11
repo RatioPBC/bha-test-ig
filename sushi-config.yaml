@@ -48,6 +48,8 @@ pages:
     title: Implementation Guidance
   profiles.md:
     title: Profiles
+  questionnaires.md:
+    title: Questionnaires
   terminology.md:
     title: Terminology
   about.md:
@@ -57,6 +59,7 @@ menu:
   Home: index.html
   Guidance: guidance.html
   Profiles: profiles.html
+  Questionnaires: questionnaires.html
   Terminology: terminology.html
   Artifacts: artifacts.html
   About: about.html

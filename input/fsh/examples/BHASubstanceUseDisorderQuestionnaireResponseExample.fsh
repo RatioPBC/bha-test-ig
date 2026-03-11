@@ -1,10 +1,9 @@
 Instance: BHASubstanceUseDisorderQuestionnaireResponseExample
-InstanceOf: QuestionnaireResponse
+//InstanceOf: QuestionnaireResponse
+InstanceOf: $us-core-questionnaireresponse
 Title: "Example Substance Use Disorder Questionnaire Responses"
 Description: "Example Responses to Substance Use Disorder Questionnaire Questions"
-
 Usage: #example
-// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
 * questionnaire = Canonical(BHASubstanceUseDisorderQuestionnaire)
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"
@@ -44,8 +43,8 @@ Usage: #example
 * item[=].text = "Times Used Tertiary Substance in Last 30 Days"
 * item[=].answer.valueInteger = 2
 * item[+].linkId = "TERTIARY_ROUTE_OF_USE"
-* item[=].text = "Route of Use of Tertiary Substances"
+* item[=].text = "Route of Use of Tertiary Substance"
 * item[=].answer.valueCoding = BHASubstanceUseRouteOfAdministrationCS#1
 * item[+].linkId = "TERTIARY_START_AGE"
-* item[=].text = "Age of First Use of Tertiary Substances"
+* item[=].text = "Age of First Use of Tertiary Substance"
 * item[=].answer.valueInteger = 29
