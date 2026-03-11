@@ -18,6 +18,12 @@ The following questionnaires have been defined for this implementation guide.
 
 [example BHA Discharge Questionnaire Response](QuestionnaireResponse-BHADischargeQuestionnaireResponseExample.html)
 
+### BHA Diagnosis Questionnaire
+
+[BHA Diagnosis Questionnaire](Questionnaire-BHADiagnosisQuestionnaire.html)
+
+[example BHA Diagnosis Questionnaire Response](QuestionnaireResponse-BHADiagnosisQuestionnaireResponseExample.html)
+
 ### BHA Special Connections Pregnancy/Postpartum Risk Screening Questionnaire
 
 [BHA Special Connections Pregnancy/Postpartum Risk Screening Questionnaire](Questionnaire-BHASCPregnancyPostpartumRiskQuestionnaire.html)
