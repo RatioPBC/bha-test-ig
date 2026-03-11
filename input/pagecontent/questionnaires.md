@@ -42,3 +42,5 @@ The following questionnaires have been defined for this implementation guide.
 
 [example BHA Substance Use Disorder Questionnaire Response](QuestionnaireResponse-BHASubstanceUseDisorderQuestionnaireResponseExample.html)
 
+<!--- there is a fragment, but given examples are hard to find, the above looks the same -->
+<!-- {% include table-questionnaires.xhtml %} -->
