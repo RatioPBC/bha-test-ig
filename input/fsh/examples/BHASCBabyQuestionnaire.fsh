@@ -1,11 +1,11 @@
 Instance: BHASCBabyQuestionnaire
-InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
+InstanceOf: $sdc-questionnaire
 //Id: bha-sc-baby-questionnaire
 Title: "BHA Special Connections Baby Questionnaire"
 Description: "Behavioral Health Administration Special Connections baby questionnaire for collecting information about a baby born to a person enrolled in the Special Connections program"
 Usage: #example
 
-* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHA-sc-baby"
+* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHASCBabyQuestionnaire"
 * version = "1.0.0"
 * name = "BHASCBabyQuestionnaire"
 * title = "BHA Special Connections Baby Questionnaire"
@@ -28,7 +28,7 @@ Usage: #example
 
 * item[+].linkId = "WEIGHT_LBS"
 * item[=].text = "Baby Weight Pounds"
-* item[=].type = #quantity
+* item[=].type = #decimal
 * item[=].required = true
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].extension[=].valueCoding.system = "http://unitsofmeasure.org"
@@ -36,7 +36,7 @@ Usage: #example
 
 * item[+].linkId = "WEIGHT_OZ"
 * item[=].text = "Baby Weight Ounces"
-* item[=].type = #quantity
+* item[=].type = #decimal
 * item[=].required = true
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
 * item[=].extension[=].valueCoding.system = "http://unitsofmeasure.org"

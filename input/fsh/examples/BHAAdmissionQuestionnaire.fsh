@@ -1,11 +1,11 @@
 Instance: BHAAdmissionQuestionnaire
-InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire
+InstanceOf: $sdc-questionnaire
 //Id: bha-admission-questionnaire
 Title: "BHA Admission Questionnaire"
 Description: "Behavioral Health Administration admission questionnaire for collecting patient demographic, clinical, and administrative information"
 Usage: #example
 
-* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHA-admission"
+* url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHAAdmissionQuestionnaire"
 * version = "1.0.0"
 * name = "BHAAdmissionQuestionnaire"
 * title = "BHA Admission Questionnaire"
@@ -68,15 +68,14 @@ Usage: #example
 
 * item[+].linkId = "MONTHLY_INCOME"
 * item[=].text = "Monthly Income"
-* item[=].type = #quantity
+* item[=].type = #decimal
 * item[=].required = false
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-* item[=].extension[=].valueCoding.system = "urn:iso:std:iso:4217"
-* item[=].extension[=].valueCoding.code = #USD
+* item[=].extension[=].valueCoding = urn:iso:std:iso:4217#USD
 * item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
-* item[=].extension[=].valueQuantity.value = 0
+* item[=].extension[=].valueDecimal = 0
 * item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
-* item[=].extension[=].valueQuantity.value = 9999
+* item[=].extension[=].valueDecimal = 9999
 
 * item[+].linkId = "PRIMARY_INCOME_SOURCE"
 * item[=].text = "Primary Source of income/support for client (or for client's parent if client >18 years of age)"
@@ -159,16 +158,16 @@ Usage: #example
 * item[=].required = true
 * item[=].enableWhen[0].question = "LEGAL_STATUS"
 * item[=].enableWhen[=].operator = #=
-* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#04 "04 72-hour evaluation and treatment"
+* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#04 "72-hour evaluation and treatment"
 * item[=].enableWhen[+].question = "LEGAL_STATUS"
 * item[=].enableWhen[=].operator = #=
-* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#05 "05 Short-term certification"
+* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#05 "Short-term certification"
 * item[=].enableWhen[+].question = "LEGAL_STATUS"
 * item[=].enableWhen[=].operator = #=
-* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#06 "06 Long-term certification"
+* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#06 "Long-term certification"
 * item[=].enableWhen[+].question = "LEGAL_STATUS"
 * item[=].enableWhen[=].operator = #=
-* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#09 "09 Emergency/Involuntary Alcohol/Drug Commitment"
+* item[=].enableWhen[=].answerCoding = BHALegalStatusCS#09 "Emergency/Involuntary Alcohol/Drug Commitment"
 * item[=].enableBehavior = #any
 * item[=].answerValueSet = Canonical(BHAInvoluntaryCommitmentReasonVS)
 

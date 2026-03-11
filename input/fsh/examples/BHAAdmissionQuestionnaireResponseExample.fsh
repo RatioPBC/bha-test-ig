@@ -1,10 +1,9 @@
 Instance: BHAAdmissionQuestionnaireResponseExample
-InstanceOf: QuestionnaireResponse
+//InstanceOf: QuestionnaireResponse
+InstanceOf: $us-core-questionnaireresponse
 Title: "Example BHA Admission Questionnaire Responses"
 Description: "Example Responses to BHA Admission Questionnaire Questions"
-
 Usage: #example
-// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
 * questionnaire = Canonical(BHAAdmissionQuestionnaire)
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"
@@ -36,10 +35,7 @@ Usage: #example
 * item[=].answer.valueCoding = BHALivingSituationCS#1
 * item[+].linkId = "MONTHLY_INCOME"
 * item[=].text = "Monthly Income"
-* item[=].answer.valueQuantity.value = 999
-* item[=].answer.valueQuantity.unit = "USD"
-* item[=].answer.valueQuantity.system = "urn:iso:std:iso:4217"
-* item[=].answer.valueQuantity.code = #USD
+* item[=].answer.valueDecimal = 999
 * item[+].linkId = "PRIMARY_INCOME_SOURCE"
 * item[=].text = "Primary Source of income/support for client (or for client's parent if client >18 years of age)"
 * item[=].answer.valueCoding = BHAIncomeSourceCS#2

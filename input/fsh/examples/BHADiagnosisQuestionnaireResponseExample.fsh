@@ -1,10 +1,9 @@
 Instance: BHADiagnosisQuestionnaireResponseExample
-InstanceOf: QuestionnaireResponse
+//InstanceOf: QuestionnaireResponse
+InstanceOf: $us-core-questionnaireresponse
 Title: "Example Diagnosis Questionnaire Responses"
 Description: "Example Responses to Diagnosis Questionnaire Questions"
-
 Usage: #example
-// * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"
 * questionnaire = Canonical(BHADiagnosisQuestionnaire)
 * status = #completed
 * subject = Reference(Patient/example) "Mickey Mouse"
