@@ -2,7 +2,6 @@ CodeSystem: BHAPregnancyPostpartumCS
 Id: bha-pregnancy-postpartum-status-cs
 Title: "BHA Pregnancy / Postpartum Status"
 Description: "Code system for pregnancy / postpartum status used in BHA Special Connections Pregnancy/Postpartum Risk Screening Questionnaire"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

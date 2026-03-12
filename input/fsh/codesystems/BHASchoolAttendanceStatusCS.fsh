@@ -2,7 +2,6 @@ CodeSystem: BHASchoolAttendanceStatusCS
 Id: bha-school-attendance-status
 Title: "BHA School Attendance Status"
 Description: "Code system for school attendance statuses used in BHA episodes"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

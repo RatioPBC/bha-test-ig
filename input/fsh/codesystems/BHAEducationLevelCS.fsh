@@ -2,7 +2,6 @@ CodeSystem: BHAEducationLevelCS
 Id: bha-education-level-cs
 Title: "BHA Education Level"
 Description: "Code system for education levels used in BHA episodes"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

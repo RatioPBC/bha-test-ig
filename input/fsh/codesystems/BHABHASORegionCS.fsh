@@ -3,7 +3,6 @@ CodeSystem: BHABHASORegionCS
 Id: bha-bhaso-region-cs
 Title: "BHA BHASO Region Codes"
 Description: "BHASO regions"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * #1 "Region 1"

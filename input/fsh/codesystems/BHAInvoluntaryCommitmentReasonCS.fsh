@@ -2,7 +2,6 @@ CodeSystem: BHAInvoluntaryCommitmentReasonCS
 Id: bha-involuntary-commitment-reason
 Title: "BHA Involuntary Commitment Reason"
 Description: "Code system for involuntary commitment reasons used in BHA admission process"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

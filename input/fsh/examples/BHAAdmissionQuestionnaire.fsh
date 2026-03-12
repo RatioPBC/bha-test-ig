@@ -4,7 +4,6 @@ InstanceOf: $sdc-questionnaire
 Title: "BHA Admission Questionnaire"
 Description: "Behavioral Health Administration admission questionnaire for collecting patient demographic, clinical, and administrative information"
 Usage: #definition 
-* extension[$fmm].valueInteger = 3
 
 * url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHAAdmissionQuestionnaire"
 * version = "1.0.0"

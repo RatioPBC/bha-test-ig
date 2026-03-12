@@ -3,7 +3,6 @@ Parent: $us-core-organization
 Id: bha-organization
 Title: "Colorado BHA Provider Organization Profile"
 Description: "Provider Organization profile for Colorado BHASO clinics"
-* ^extension[$fmm].valueInteger = 3
 
 * identifier 1..* MS
 * identifier[NPI] 1..1 MS

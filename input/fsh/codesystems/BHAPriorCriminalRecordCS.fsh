@@ -2,7 +2,6 @@ CodeSystem: BHAPriorCriminalRecordCS
 Id: bha-prior-criminal-record-cs
 Title: "BHA Prior Criminal Record"
 Description: "Code system for prior criminal record used in BHA Special Connections"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

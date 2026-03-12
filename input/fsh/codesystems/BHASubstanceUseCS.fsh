@@ -2,7 +2,6 @@ CodeSystem: BHASubstanceUseCS
 Id: bha-substance-use-cs
 Title: "BHA Substance Use Codes"
 Description: "Substance use codes for BHA services/admissions."
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * #0 "None (valid only for differential assessment)"

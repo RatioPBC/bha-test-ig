@@ -2,7 +2,6 @@ CodeSystem: BHAPersonalSafetyCS
 Id: bha-personal-safety-cs
 Title: "BHA Personal Safety"
 Description: "Code system for personal safety used in BHA Special Connections"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

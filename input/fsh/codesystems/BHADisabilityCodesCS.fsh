@@ -2,7 +2,6 @@ CodeSystem: BHADisabilityCodesCS
 Id: bha-disability-codes-cs
 Title: "BHA Disability Codes"
 Description: "Types of disabilities for BHA admissions."
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * #01 "None"

@@ -2,7 +2,6 @@ CodeSystem: BHAMentalHealthHistoryCS
 Id: bha-mental-health-history-cs
 Title: "BHA Mental Health History"
 Description: "Code system for mental health history used in BHA Special Connections"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
