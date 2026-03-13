@@ -3,7 +3,7 @@ InstanceOf: $sdc-questionnaire
 //Id: bha-diagnosis-questionnaire
 Title: "BHA Diagnosis Questionnaire"
 Description: "Behavioral Health Administration diagnosis questionnaire for collecting patient clinical information during a behavioral health episode of care"
-Usage: #example
+Usage: #definition 
 
 * url = "http://bha.colorado.gov/fhir/bha-test-ig/Questionnaire/BHADiagnosisQuestionnaire"
 * version = "1.0.0"

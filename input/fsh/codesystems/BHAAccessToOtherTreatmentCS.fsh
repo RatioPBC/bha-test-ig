@@ -2,7 +2,6 @@ CodeSystem: BHAAccessToOtherTreatmentCS
 Id: bha-access-to-other-treatment-cs
 Title: "BHA Access to Other Drug/Alcohol Treatment"
 Description: "Code system for access to other drug/alcohol treatment used in BHA Special Connections"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * #01 "Has access to other treatment"

@@ -2,7 +2,6 @@ CodeSystem: BHAEndOfTreatmentReasonCS
 Id: bha-end-of-treatment-reason-cs
 Title: "BHA End of Treatment Reasons"
 Description: "End of Treatment Reasons for BHA services/admissions."
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * #1 "Attendance"

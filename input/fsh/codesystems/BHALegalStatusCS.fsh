@@ -2,7 +2,6 @@ CodeSystem: BHALegalStatusCS
 Id: bha-legal-status
 Title: "BHA Legal Status"
 Description: "Code system for legal statuses used in BHA episodes"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 

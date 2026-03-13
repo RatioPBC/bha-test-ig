@@ -2,7 +2,6 @@ CodeSystem: BHAMaritalStatusCS
 Id: bha-marital-status
 Title: "BHA Marital Status"
 Description: "Code system for marital statuses used in BHA admission process"
-* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
