@@ -1,10 +1,8 @@
-## Maturity Levels
+
 
 **Note: This page derived off of [FHIR core Maturity Model](http://hl7.org/fhir/versions.html#maturity)**
 
 **There are Maturity Levels on artifacts, all the maturity level numbers are expected to be consistent with HL7 definition of [Maturity Levels (aka FMM)](http://build.fhir.org/versions.html#maturity).**
-
-The content of this release has been subject to significant review through **CO BHA** processes and many aspects of it have been implemented and subjected to interoperability testing through Connectathons and early adoption. However, the degree of testing has varied. Some resources have been well tested in a variety of environments. Others have received relatively little real-world exercise. In general, the infrastructure should be considered to be more stable than the resources themselves. In some cases, there are issues on which input is specifically requested during the **Trial Use** period (see the Outstanding Issue List, and known issues will arise after publication (refer to the **CO BHA** Change Request icon tracker for details.) Guidance from early implementation will help address these areas.
 
 All artifacts in this specification are assigned a "Maturity Level" **modeled** after the well-known [Capability Maturity Model Levels](http://wikipedia.org/wiki/Capability_Maturity_Model). The  **Maturity** level can be used by implementers to judge how advanced - and therefore stable - an artifact is. The following **Maturity** levels are defined:
 
